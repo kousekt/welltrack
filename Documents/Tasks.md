@@ -3,7 +3,7 @@
 ## Phase 1: Backend Foundation (Weeks 1–3)
 
 - [x] Initialize Node.js/Express project with TypeScript, ESLint, and folder structure (`routes/`, `controllers/`, `middleware/`, `prisma/`)
-- [ ] Set up PostgreSQL connection and define Prisma schema for all models: User, Symptom, SymptomLog, MoodLog, Medication, MedicationLog, Habit, HabitLog
+- [x] Set up PostgreSQL connection and define Prisma schema for all models: User, Symptom, SymptomLog, MoodLog, Medication, MedicationLog, Habit, HabitLog
 - [ ] Write and run database migrations; create seed file for default symptoms (Headache, Fatigue, etc.) and default habits (Sleep Duration, Water Intake, etc.)
 - [ ] Implement auth endpoints: `POST /api/auth/register` and `POST /api/auth/login` with bcrypt password hashing and JWT access + refresh token issuance
 - [ ] Implement `POST /api/auth/refresh` to validate refresh tokens and issue new access tokens, and `POST /api/auth/logout` to invalidate refresh tokens
