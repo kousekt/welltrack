@@ -1,0 +1,9 @@
+import { Router } from 'express';
+import { authenticate } from '../middleware/authenticate';
+import { getMe } from '../controllers/user.controller';
+
+const router = Router();
+
+router.get('/', authenticate, getMe);
+
+export default router;
