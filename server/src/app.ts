@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+import { registerRoutes } from './routes';
+import { errorHandler } from './middleware/errorHandler';
 
 const app = express();
 
@@ -11,5 +13,8 @@ app.use(express.json());
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
+
+registerRoutes(app);
+app.use(errorHandler);
 
 export default app;

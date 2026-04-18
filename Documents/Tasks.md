@@ -4,22 +4,22 @@
 
 - [x] Initialize Node.js/Express project with TypeScript, ESLint, and folder structure (`routes/`, `controllers/`, `middleware/`, `prisma/`)
 - [x] Set up PostgreSQL connection and define Prisma schema for all models: User, Symptom, SymptomLog, MoodLog, Medication, MedicationLog, Habit, HabitLog
-- [ ] Write and run database migrations; create seed file for default symptoms (Headache, Fatigue, etc.) and default habits (Sleep Duration, Water Intake, etc.)
-- [ ] Implement auth endpoints: `POST /api/auth/register` and `POST /api/auth/login` with bcrypt password hashing and JWT access + refresh token issuance
-- [ ] Implement `POST /api/auth/refresh` to validate refresh tokens and issue new access tokens, and `POST /api/auth/logout` to invalidate refresh tokens
-- [ ] Implement password reset flow: `POST /api/auth/forgot-password` (sends email token) and `POST /api/auth/reset-password` (validates token, updates hash)
-- [ ] Add `authenticate` middleware that validates JWT on protected routes and attaches `req.user`
-- [ ] Implement user profile endpoints: `GET /api/users/me`, `PATCH /api/users/me` (name, timezone), `DELETE /api/users/me` (cascade delete all user data)
-- [ ] Implement symptom endpoints: `GET /api/symptoms` (system + user's custom), `POST /api/symptoms`, `PATCH /api/symptoms/:id`, `DELETE /api/symptoms/:id`
-- [ ] Implement symptom log endpoints: `GET /api/symptom-logs` (with `startDate`, `endDate`, `limit`, `offset` query params), `POST`, `PATCH /:id`, `DELETE /:id`
-- [ ] Implement mood log endpoints: `GET /api/mood-logs` (with date range params), `POST`, `PATCH /:id`, `DELETE /:id`
-- [ ] Implement medication endpoints: `GET /api/medications`, `POST`, `PATCH /:id`, `DELETE /:id`
-- [ ] Implement medication log endpoints: `GET /api/medication-logs` (with date range params), `POST`, `PATCH /:id`, `DELETE /:id`
-- [ ] Implement habit endpoints: `GET /api/habits` (system + user's custom), `POST`, `PATCH /:id`, `DELETE /:id`
-- [ ] Implement habit log endpoints: `GET /api/habit-logs` (with date range params), `POST`, `PATCH /:id`, `DELETE /:id`
-- [ ] Add request validation middleware using zod (or express-validator) on all POST/PATCH endpoints
-- [ ] Add a global error handler that returns consistent `{ error, message }` JSON responses with appropriate HTTP status codes
-- [ ] Add database indexes on `(user_id, logged_at)` for all log tables in the Prisma schema
+- [x] Write and run database migrations; create seed file for default symptoms (Headache, Fatigue, etc.) and default habits (Sleep Duration, Water Intake, etc.)
+- [x] Implement auth endpoints: `POST /api/auth/register` and `POST /api/auth/login` with bcrypt password hashing and JWT access + refresh token issuance
+- [x] Implement `POST /api/auth/refresh` to validate refresh tokens and issue new access tokens, and `POST /api/auth/logout` to invalidate refresh tokens
+- [x] Implement password reset flow: `POST /api/auth/forgot-password` (sends email token) and `POST /api/auth/reset-password` (validates token, updates hash)
+- [x] Add `authenticate` middleware that validates JWT on protected routes and attaches `req.user`
+- [x] Implement user profile endpoints: `GET /api/users/me`, `PATCH /api/users/me` (name, timezone), `DELETE /api/users/me` (cascade delete all user data)
+- [x] Implement symptom endpoints: `GET /api/symptoms` (system + user's custom), `POST /api/symptoms`, `PATCH /api/symptoms/:id`, `DELETE /api/symptoms/:id`
+- [x] Implement symptom log endpoints: `GET /api/symptom-logs` (with `startDate`, `endDate`, `limit`, `offset` query params), `POST`, `PATCH /:id`, `DELETE /:id`
+- [x] Implement mood log endpoints: `GET /api/mood-logs` (with date range params), `POST`, `PATCH /:id`, `DELETE /:id`
+- [x] Implement medication endpoints: `GET /api/medications`, `POST`, `PATCH /:id`, `DELETE /:id`
+- [x] Implement medication log endpoints: `GET /api/medication-logs` (with date range params), `POST`, `PATCH /:id`, `DELETE /:id`
+- [x] Implement habit endpoints: `GET /api/habits` (system + user's custom), `POST`, `PATCH /:id`, `DELETE /:id`
+- [x] Implement habit log endpoints: `GET /api/habit-logs` (with date range params), `POST`, `PATCH /:id`, `DELETE /:id`
+- [x] Add request validation middleware using zod (or express-validator) on all POST/PATCH endpoints
+- [x] Add a global error handler that returns consistent `{ error, message }` JSON responses with appropriate HTTP status codes
+- [x] Add database indexes on `(user_id, logged_at)` for all log tables in the Prisma schema
 
 ---
 
